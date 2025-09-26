@@ -1,0 +1,25 @@
+{
+  "name": "interest-calculator",
+  "version": "1.0.0",
+  "description": "Coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olivermartinhirsch/interest-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olivermartinhirsch/interest-calculator/issues"
+  },
+  "homepage": "https://github.com/olivermartinhirsch/interest-calculator#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2"
+  }
+}
