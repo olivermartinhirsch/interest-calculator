@@ -1,18 +1,23 @@
 # interest-calculator
 
+This is my suite of automated tests for the interest calculator.
 
-Requirements
-Objective: As a product owner, I want to build a responsive interest calculator web application.
+To run them:
 
-Features:
+    npm install
 
-The application should provide options to choose the duration for interest calculation: Daily, Monthly, and Yearly.
-Users should be able to input the principal amount.
-Users should be able to select the interest rate from a predefined list of rates up to 15%.
-The application should calculate the correct interest based on the selected duration, principal amount, and interest rate.
-The application should display the calculated interest and the total amount including interest.
-All input fields (principal amount, interest rate, duration and consent) are mandatory.
-The application should inform the user if any field is left empty or not selected.
-For simplicity, the calculated interest and total amount should be rounded to two decimal places.
-The application should be responsive and user-friendly.
-Clear error messages should be displayed to guide users in case of missing or incorrect inputs.
+then run:
+
+    npm run test
+    
+to run the tests headlessly or:
+
+    npm run test:headed
+
+top run them in the chromium browser.
+
+Please note you will have to provide your credentials on line 9 of `main.spec.ts` as I didn't have time to set up env vars!
+
+My approach was to manually check the application first against the spec, then wrote tests as if there were no issues. Because of this there are 3 failing tests but these are expected to fail as I have written them as if the application worked as expected. 
+
+I have left some comments in the code to show my thought processes around issues I found etc.
